@@ -11,7 +11,7 @@ When AI agents generate or refactor code, comments frequently end up as either n
 1. **Highlight Critical Invariants & Dangers (`!`)**: Red alerts for destructive calls, data mutations, security vulnerabilities, or concurrency pitfalls.
 2. **Surface Collaborations & Trade-Offs (`?`)**: Blue queries directly to human reviewers highlighting ambiguities, alternate architectures, or edge cases.
 3. **Structure Work Backlog (`TODO:`)**: Orange actionable tasks with clear scope, ownership, or deprecation targets.
-4. **Explain Non-Obvious Rationale (`*`)**: Green high-signal commentary answering *"why this approach"*, not *"what this line does"*.
+4. **Explain Non-Obvious Rationale (`*`)**: Green high-signal commentary answering _"why this approach"_, not _"what this line does"_.
 5. **Mark Deprecations (`//` / `DEPRECATED:`)**: Gray strikethrough markers for legacy paths and upcoming removals.
 
 ---

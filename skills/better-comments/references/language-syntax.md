@@ -5,9 +5,11 @@ Comprehensive reference of comment characters and tag patterns across 20+ progra
 ---
 
 ## 1. C-Style Languages
+
 Includes: **TypeScript, JavaScript, C, C++, C#, Java, Go, Rust, PHP, Swift, Kotlin, Dart, Scala**
 
 ### Single-Line Comments
+
 ```typescript
 // ! Alert: Critical warning, invariant, or security boundary
 // ? Question: Clarification needed from reviewer or user
@@ -19,6 +21,7 @@ Includes: **TypeScript, JavaScript, C, C++, C#, Java, Go, Rust, PHP, Swift, Kotl
 ```
 
 ### Multi-Line Comments
+
 ```typescript
 /* !
  * CRITICAL WARNING:
@@ -41,9 +44,11 @@ Includes: **TypeScript, JavaScript, C, C++, C#, Java, Go, Rust, PHP, Swift, Kotl
 ---
 
 ## 2. Hash-Style Languages
+
 Includes: **Python, Bash / Shell, Ruby, Perl, R, Elixir, Crystal, Dockerfile, YAML, Makefile**
 
 ### Single-Line Comments
+
 ```python
 # ! Alert: Modifies filesystem state directly; ensure backup
 # ? Question: Should we cache this DNS response locally?
@@ -55,6 +60,7 @@ Includes: **Python, Bash / Shell, Ruby, Perl, R, Elixir, Crystal, Dockerfile, YA
 ```
 
 ### Multi-Line / Block Comments (Python Docstring / Bash HereDoc)
+
 ```python
 """
 ! CRITICAL:
@@ -65,9 +71,11 @@ Thread-unsafe operation. Must be guarded by acquisition of threading.RLock.
 ---
 
 ## 3. SQL & Database Dialects
+
 Includes: **PostgreSQL, MySQL, SQLite, Oracle PL/SQL, Snowflake, BigQuery, Lua, Haskell, Ada**
 
 ### Single-Line Comments
+
 ```sql
 -- ! Alert: Exclusive lock will be held on the users table during this migration
 -- ? Question: Can we partition this table by created_at month?
@@ -77,6 +85,7 @@ Includes: **PostgreSQL, MySQL, SQLite, Oracle PL/SQL, Snowflake, BigQuery, Lua, 
 ```
 
 ### Multi-Line Comments
+
 ```sql
 /* !
  * Dropping the view cascades to 3 dependent analytical reporting tables.
@@ -86,9 +95,11 @@ Includes: **PostgreSQL, MySQL, SQLite, Oracle PL/SQL, Snowflake, BigQuery, Lua, 
 ---
 
 ## 4. Web & Markup Languages
+
 Includes: **HTML, XML, SVG, Markdown, Vue / Svelte Template, JSX / TSX**
 
 ### HTML / XML / Markdown Comments
+
 ```html
 <!-- ! Alert: Content Security Policy nonce must be preserved -->
 <!-- ? Question: Should we lazy-load this hero video on mobile? -->
@@ -97,6 +108,7 @@ Includes: **HTML, XML, SVG, Markdown, Vue / Svelte Template, JSX / TSX**
 ```
 
 ### CSS / SCSS / SASS / Less
+
 ```css
 /* ! Alert: Critical z-index layer reserved for toast notifications */
 /* ? Question: Should we replace fixed pixels with CSS clamp() for fluid typography? */
@@ -107,9 +119,11 @@ Includes: **HTML, XML, SVG, Markdown, Vue / Svelte Template, JSX / TSX**
 ---
 
 ## 5. Shell Scripting & Infrastructure
+
 Includes: **Bash, Zsh, Sh, PowerShell, Terraform / HCL, Nginx Conf**
 
 ### PowerShell
+
 ```powershell
 # ! Alert: Execution requires elevated Administrator privileges
 # ? Question: Should we verify code signing certificate before invoking script?
@@ -123,6 +137,7 @@ Terminating error will invoke system trap handler.
 ```
 
 ### Nginx Configuration
+
 ```nginx
 # ! Alert: Buffer size must match upstream PHP-FPM fastcgi_buffer_size
 # * Highlight: HTTP/2 push enabled for critical styles
@@ -131,6 +146,7 @@ Terminating error will invoke system trap handler.
 ```
 
 ### Terraform / HCL
+
 ```hcl
 # ! Alert: Changing instance_type triggers resource destruction and recreation
 # * Highlight: Multi-AZ placement for 99.99% availability SLA

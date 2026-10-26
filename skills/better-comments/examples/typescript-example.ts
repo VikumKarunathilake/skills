@@ -24,7 +24,7 @@ export class DistributedLRUCache<T> {
   public async getOrFetch(
     key: string,
     fetcher: () => Promise<T>,
-    ttlMs: number
+    ttlMs: number,
   ): Promise<T> {
     // * Cache hit fast-path: O(1) in-memory lookup avoids database roundtrip
     const cached = this.store.get(key);

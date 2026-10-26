@@ -23,8 +23,8 @@ npx skills add VikumKarunathilake/skills --all
 
 ## 🛠 Available Skills
 
-| Skill | Category | Description | Quick Command |
-| :--- | :--- | :--- | :--- |
+| Skill                                            | Category                  | Description                                                                                                                                                   | Quick Command                                                      |
+| :----------------------------------------------- | :------------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------ | :----------------------------------------------------------------- |
 | **[`better-comments`](skills/better-comments/)** | Code Annotation & Quality | Helps AI coding agents write, organize, review, and maintain human-friendly code comments using Better Comments conventions across 20+ programming languages. | `npx skills add VikumKarunathilake/skills --skill better-comments` |
 
 ---
@@ -32,12 +32,13 @@ npx skills add VikumKarunathilake/skills --all
 ## 🌟 Skill Highlights
 
 ### `better-comments`
+
 - **Purpose**: Transforms low-value, repetitive AI comments into structured, color-coded annotations that jump out in IDEs (VS Code, Cursor, JetBrains).
 - **Core Triggers**:
   - `!` **Alerts / Warnings**: Highlights security hazards, destructive operations, and critical invariants in 🔴 red.
   - `?` **Queries / Questions**: Surfaces ambiguities, design trade-offs, and edge cases to human reviewers in 🔵 blue.
   - `TODO:` **Tasks / Backlog**: Formats actionable work items with clear context and ownership in 🟠 orange.
-  - `*` **Highlights / Rationale**: Documents architectural intent (*"why"*, not *"what"*) in 🟢 green.
+  - `*` **Highlights / Rationale**: Documents architectural intent (_"why"_, not _"what"_) in 🟢 green.
   - `//` / `DEPRECATED:` **Deprecations**: Strikethrough notation for obsolete code.
 - **Documentation**: [skills/better-comments/README.md](skills/better-comments/README.md)
 - **Specification**: [skills/better-comments/SKILL.md](skills/better-comments/SKILL.md)
@@ -58,7 +59,6 @@ To add a new skill to this repository:
    metadata:
      version: "1.0.0"
    ---
-
    # Skill Title
 
    Detailed operational instructions, hard rules, and examples...

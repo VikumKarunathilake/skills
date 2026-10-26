@@ -20,13 +20,13 @@ As an AI coding agent, your comments must provide immediate visual clarity to hu
 
 Every comment written or refactored under this convention must begin with one of the standard categorization triggers immediately following the language's comment delimiter:
 
-| Category                       | Trigger Prefix        | VS Code Color Theme     | Purpose & Intent                                                                                        | When to Use                                                                                                        |
-| :----------------------------- | :-------------------- | :---------------------- | :------------------------------------------------------------------------------------------------------ | :----------------------------------------------------------------------------------------------------------------- |
-| **Alert / Warning**            | `!`                   | 🔴 Red                  | High-risk behaviors, security implications, destructive calls, invariants, critical preconditions.      | Database drops, external process kills, security traps, non-idempotent operations, unvalidated inputs.             |
-| **Query / Clarification**      | `?`                   | 🔵 Blue                 | Solicits human reviewer input, highlights ambiguities, unresolved edge cases, architectural trade-offs. | Uncertainty in user intent, missing requirements, performance vs. memory trade-offs, potential future bottlenecks. |
-| **Task / Backlog**             | `TODO:` or `TODO`     | 🟠 Orange               | Actionable work items, pending refactors, scheduled integrations, planned feature follow-ups.           | Deferred optimizations, upcoming API migrations, unit test gaps.                                                   |
-| **Highlight / Intent**         | `*`                   | 🟢 Green                | Core algorithmic insights, architectural decisions, business logic rationale (_"why"_, not _"what"_).   | Non-obvious mathematical steps, regex explanations, workflow dispatch rationale, complex state transitions.        |
-| **Deprecated / Strikethrough** | `//` or `DEPRECATED:` | ⚪ Strikethrough (Gray) | Deprecated functions, obsolete parameters, dead code scheduled for removal.                             | Legacy endpoints, backward-compatibility shims, superseded configurations.                                         |
+| Category                       | Trigger Prefix        | VS Code Color Theme  | Purpose & Intent                                                                                        | When to Use                                                                                                        |
+| :----------------------------- | :-------------------- | :------------------- | :------------------------------------------------------------------------------------------------------ | :----------------------------------------------------------------------------------------------------------------- |
+| **Alert / Warning**            | `!`                   | Red                  | High-risk behaviors, security implications, destructive calls, invariants, critical preconditions.      | Database drops, external process kills, security traps, non-idempotent operations, unvalidated inputs.             |
+| **Query / Clarification**      | `?`                   | Blue                 | Solicits human reviewer input, highlights ambiguities, unresolved edge cases, architectural trade-offs. | Uncertainty in user intent, missing requirements, performance vs. memory trade-offs, potential future bottlenecks. |
+| **Task / Backlog**             | `TODO:` or `TODO`     | Orange               | Actionable work items, pending refactors, scheduled integrations, planned feature follow-ups.           | Deferred optimizations, upcoming API migrations, unit test gaps.                                                   |
+| **Highlight / Intent**         | `*`                   | Green                | Core algorithmic insights, architectural decisions, business logic rationale (_"why"_, not _"what"_).   | Non-obvious mathematical steps, regex explanations, workflow dispatch rationale, complex state transitions.        |
+| **Deprecated / Strikethrough** | `//` or `DEPRECATED:` | Strikethrough (Gray) | Deprecated functions, obsolete parameters, dead code scheduled for removal.                             | Legacy endpoints, backward-compatibility shims, superseded configurations.                                         |
 
 ### Extended Industry Tags (Commonly Configured)
 
@@ -62,7 +62,7 @@ Ensure the prefix is placed immediately after the comment delimiter and a single
 
 ### Rule 1: Signal-Over-Noise (Never Comment the Obvious)
 
-❌ **Anti-Pattern (Restating Code)**:
+**Anti-Pattern (Restating Code)**:
 
 ```typescript
 // * Set counter to 0
@@ -75,7 +75,7 @@ for (const item of items) {
 }
 ```
 
-✅ **Production Standard (Explaining Rationale & Invariants)**:
+**Production Standard (Explaining Rationale & Invariants)**:
 
 ```typescript
 // * Reset counter before each batch window to prevent buffer overflow in stream consumers

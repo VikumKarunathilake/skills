@@ -4,7 +4,7 @@ A curated collection of production-ready agent skills for AI coding assistants (
 
 ---
 
-## 📦 Quick Installation
+## Quick Installation
 
 Install any skill directly into your current workspace or global agent environment using the official `skills` CLI:
 
@@ -21,7 +21,7 @@ npx skills add VikumKarunathilake/skills --all
 
 ---
 
-## 🛠 Available Skills
+## Available Skills
 
 | Skill                                            | Category                  | Description                                                                                                                                                   | Quick Command                                                      |
 | :----------------------------------------------- | :------------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------ | :----------------------------------------------------------------- |
@@ -29,23 +29,23 @@ npx skills add VikumKarunathilake/skills --all
 
 ---
 
-## 🌟 Skill Highlights
+## Skill Highlights
 
 ### `better-comments`
 
 - **Purpose**: Transforms low-value, repetitive AI comments into structured, color-coded annotations that jump out in IDEs (VS Code, Cursor, JetBrains).
 - **Core Triggers**:
-  - `!` **Alerts / Warnings**: Highlights security hazards, destructive operations, and critical invariants in 🔴 red.
-  - `?` **Queries / Questions**: Surfaces ambiguities, design trade-offs, and edge cases to human reviewers in 🔵 blue.
-  - `TODO:` **Tasks / Backlog**: Formats actionable work items with clear context and ownership in 🟠 orange.
-  - `*` **Highlights / Rationale**: Documents architectural intent (_"why"_, not _"what"_) in 🟢 green.
+  - `!` **Alerts / Warnings**: Highlights security hazards, destructive operations, and critical invariants in Red.
+  - `?` **Queries / Questions**: Surfaces ambiguities, design trade-offs, and edge cases to human reviewers in Blue.
+  - `TODO:` **Tasks / Backlog**: Formats actionable work items with clear context and ownership in Orange.
+  - `*` **Highlights / Rationale**: Documents architectural intent (_"why"_, not _"what"_) in Green.
   - `//` / `DEPRECATED:` **Deprecations**: Strikethrough notation for obsolete code.
 - **Documentation**: [skills/better-comments/README.md](skills/better-comments/README.md)
 - **Specification**: [skills/better-comments/SKILL.md](skills/better-comments/SKILL.md)
 
 ---
 
-## ➕ Adding More Skills in the Future
+## Adding More Skills in the Future
 
 To add a new skill to this repository:
 
@@ -72,6 +72,6 @@ To add a new skill to this repository:
 
 ---
 
-## 📄 License
+## License
 
 This repository is licensed under the [MIT License](LICENSE).

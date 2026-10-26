@@ -46,6 +46,15 @@ better-comments/
 
 ---
 
+## References
+
+- **VS Code Extension**: [Better Comments by Aaron Bond](https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments)
+- **Extension Source Code**: [GitHub - aaron-bond/better-comments](https://github.com/aaron-bond/better-comments)
+- **Ecosystem**: [skills.sh](https://skills.sh/)
+- **Repository**: [GitHub - VikumKarunathilake/skills](https://github.com/VikumKarunathilake/skills)
+
+---
+
 ## License
 
 MIT License. Created by [Vikum Karunathilake](https://github.com/VikumKarunathilake).

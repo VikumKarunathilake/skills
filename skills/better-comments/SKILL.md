@@ -6,6 +6,11 @@ metadata:
   version: "1.0.0"
   author: "Vikum Karunathilake"
   homepage: "https://github.com/VikumKarunathilake/skills"
+  references:
+    - name: "Better Comments VS Code Marketplace"
+      url: "https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments"
+    - name: "Better Comments GitHub Repository"
+      url: "https://github.com/aaron-bond/better-comments"
 ---
 
 # Better Comments for AI Coding Agents
@@ -116,7 +121,7 @@ Never leave a bare `// TODO`. Always provide context and clear success criteria:
 
 ### Rule 5: Distinguish Docstrings from Better Comments
 
-- **Docstrings (`/** ... */` / `""" ... """`)**: Intended for public API contracts, parameter types, and external callers.
+- **Docstrings (`/** ... \*/`/`""" ... """`)\*\*: Intended for public API contracts, parameter types, and external callers.
 - **Better Comments (`// !`, `// *`, `# !`)**: Intended for internal implementation details, risk warnings, reviewer inquiries, and technical debt inside function bodies.
 
 ---
@@ -183,3 +188,22 @@ Before delivering or committing code, inspect all generated comments:
 3. [ ] Are destructive operations and security boundaries highlighted with `!`?
 4. [ ] Are unclarified assumptions or edge cases tagged with `?` for human review?
 5. [ ] Are obvious tautological comments ("increment counter", "return value") eliminated?
+
+---
+
+## References & Documentation Links
+
+### Official Extension & Upstream Source
+- **VS Code Marketplace**: [Better Comments by Aaron Bond](https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments)
+- **GitHub Repository**: [aaron-bond/better-comments](https://github.com/aaron-bond/better-comments)
+
+### Skill Reference Guides & Assets
+- **Syntax Cheatsheet**: [Multi-Language Syntax Reference (20+ Languages)](references/language-syntax.md)
+- **VS Code Configuration**: [Recommended VS Code settings.json](references/vscode-settings.json)
+- **Code Demonstrations**:
+  - [TypeScript Implementation Demonstration](examples/typescript-example.ts)
+  - [Python Implementation Demonstration](examples/python-example.py)
+
+### Agent Ecosystem & Registry
+- **Skills Directory**: [skills.sh](https://skills.sh/)
+- **Skills Source Repository**: [GitHub: VikumKarunathilake/skills](https://github.com/VikumKarunathilake/skills)
